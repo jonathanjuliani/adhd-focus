@@ -6,8 +6,11 @@ Add each change under **Unreleased** as you make it; `python3 scripts/version.py
 
 ## [Unreleased]
 
+## [0.1.0] - 2026-10-16
+
 ### Added
 
 - `adhd-focus`, a session-long output style for a reader with ADHD. Lean by default, with a structured breakdown from `breakdown.md` only when asked. Adapted from `ayghri/i-have-adhd` (MIT).
 
-[Unreleased]: https://github.com/jonathanjuliani/adhd-focus/compare/v0.0.0...HEAD
+[Unreleased]: https://github.com/jonathanjuliani/adhd-focus/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/jonathanjuliani/adhd-focus/releases/tag/v0.1.0
