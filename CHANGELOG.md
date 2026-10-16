@@ -10,6 +10,10 @@ Add each change under **Unreleased** as you make it; `python3 scripts/version.py
 
 - The marketplace check passes `skilldeck_ref: v1.0.0`. The called workflow's default ref is this repository's commit, which skilldeck does not contain.
 
+### Added
+
+- The README examples are three generic prompts. Each one is a collapsible with the full prompt and both replies. The table only links to that section and summarizes it.
+
 ## [0.1.0] - 2026-10-16
 
 ### Added
