@@ -1,0 +1,27 @@
+{
+  "name": "adhd-focus",
+  "owner": {
+    "name": "Jonathan Juliani",
+    "url": "https://github.com/jonathanjuliani"
+  },
+  "description": "A session-long output style for a reader with ADHD. Lean by default, with a structured breakdown only when asked.",
+  "plugins": [
+    {
+      "name": "adhd-focus",
+      "version": "0.0.0",
+      "source": "./",
+      "description": "A session-long output style for a reader with ADHD. Lean by default, with a structured breakdown only when asked.",
+      "license": "MIT",
+      "author": {
+        "name": "Jonathan Juliani"
+      },
+      "homepage": "https://github.com/jonathanjuliani/adhd-focus",
+      "keywords": [
+        "skills",
+        "adhd",
+        "focus",
+        "output-style"
+      ]
+    }
+  ]
+}

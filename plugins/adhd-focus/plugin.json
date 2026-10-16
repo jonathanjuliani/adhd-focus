@@ -1,0 +1,5 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "adhd-focus",
+  "description": "A session-long output style for a reader with ADHD. Lean by default, with a structured breakdown only when asked."
+}

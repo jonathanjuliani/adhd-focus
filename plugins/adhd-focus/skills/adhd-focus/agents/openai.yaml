@@ -1,0 +1,5 @@
+interface:
+  display_name: "ADHD focus"
+  short_description: "Answer first, no noise, one next action; a structured breakdown only when asked"
+policy:
+  allow_implicit_invocation: false

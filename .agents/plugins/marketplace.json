@@ -1,0 +1,20 @@
+{
+  "name": "adhd-focus",
+  "interface": {
+    "displayName": "adhd-focus"
+  },
+  "plugins": [
+    {
+      "name": "adhd-focus",
+      "source": {
+        "source": "local",
+        "path": "./plugins/adhd-focus"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

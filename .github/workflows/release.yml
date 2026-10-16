@@ -1,0 +1,41 @@
+name: release
+
+# Push a version tag (`python3 scripts/version.py` does it) to publish the
+# GitHub Release. Marketplace users get the new version from the tagged commit.
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install pyyaml
+
+      - name: The tag, the versions and the changelog agree
+        run: python3 scripts/version.py --check "$GITHUB_REF_NAME"
+
+      - name: Structural checks
+        run: python3 scripts/validate.py
+
+      - name: GitHub Release from the changelog
+        run: |
+          version="${GITHUB_REF_NAME#v}"
+          awk -v v="$version" '
+            $0 ~ "^## \\[" v "\\]" { found = 1; next }
+            found && /^## \[/ { exit }
+            found && /^\[[^]]+\]: / { exit }
+            found { print }
+          ' CHANGELOG.md > notes.md
+          gh release create "$GITHUB_REF_NAME" --title "adhd-focus $version" --notes-file notes.md --verify-tag
+        env:
+          GH_TOKEN: ${{ github.token }}

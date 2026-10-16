@@ -1,0 +1,32 @@
+{
+  "name": "adhd-focus",
+  "version": "0.0.0",
+  "description": "A session-long output style for a reader with ADHD. Lean by default, with a structured breakdown only when asked.",
+  "author": {
+    "name": "Jonathan Juliani"
+  },
+  "homepage": "https://github.com/jonathanjuliani/adhd-focus",
+  "repository": "https://github.com/jonathanjuliani/adhd-focus",
+  "license": "MIT",
+  "keywords": [
+    "skills",
+    "adhd",
+    "focus",
+    "output-style"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "ADHD focus",
+    "shortDescription": "Answer first, no noise, one next action; a structured breakdown only when asked",
+    "longDescription": "Session-long output style for a reader with ADHD. Lean by default. A structured breakdown only when asked. Stays on until stop adhd mode.",
+    "developerName": "Jonathan Juliani",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive"
+    ],
+    "websiteURL": "https://github.com/jonathanjuliani/adhd-focus",
+    "defaultPrompt": [
+      "Use ADHD focus for this session"
+    ]
+  }
+}

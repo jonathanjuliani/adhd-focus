@@ -1,0 +1,25 @@
+name: validate
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  structure:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml
+      - name: Structural checks
+        run: python3 scripts/validate.py
+      - name: Versions agree
+        run: python3 scripts/version.py --check
+      - name: Version script tests
+        run: python3 scripts/test_version.py
+
+  marketplace:
+    # skilldeck documents this as the check another repository calls, pinned to a tag.
+    uses: jonathanjuliani/skilldeck/.github/workflows/marketplace-check.yml@v1.0.0
