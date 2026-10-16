@@ -21,5 +21,8 @@ jobs:
         run: python3 scripts/test_version.py
 
   marketplace:
-    # skilldeck documents this as the check another repository calls, pinned to a tag.
+    # Pin the workflow file and the skilldeck checkout. github.workflow_sha in the
+    # called workflow is this repository's commit, so the default ref misses.
     uses: jonathanjuliani/skilldeck/.github/workflows/marketplace-check.yml@v1.0.0
+    with:
+      skilldeck_ref: v1.0.0

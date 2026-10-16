@@ -6,6 +6,10 @@ Add each change under **Unreleased** as you make it; `python3 scripts/version.py
 
 ## [Unreleased]
 
+### Fixed
+
+- The marketplace check passes `skilldeck_ref: v1.0.0`. The called workflow's default ref is this repository's commit, which skilldeck does not contain.
+
 ## [0.1.0] - 2026-10-16
 
 ### Added
