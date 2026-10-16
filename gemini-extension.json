@@ -1,6 +1,6 @@
 {
   "name": "adhd-focus",
   "description": "A session-long output style for a reader with ADHD. Lean by default, with a structured breakdown only when asked.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "contextFileName": "GEMINI.md"
 }

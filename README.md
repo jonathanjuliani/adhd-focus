@@ -6,7 +6,7 @@ Adapted from [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd) (MIT).
 
 | Plugin | What it is | Version |
 | --- | --- | --- |
-| `adhd-focus` | Answer first, no noise, one next action. | 0.1.0 |
+| `adhd-focus` | Answer first, no noise, one next action. | 0.1.1 |
 
 ## Install
 
