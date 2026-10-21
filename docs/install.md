@@ -47,6 +47,16 @@ The marketplace file is `.agents/plugins/marketplace.json`. The plugin manifest 
 
 Update the marketplace from Codex, then start a new session.
 
+## ChatGPT and OpenAI web
+
+Download `adhd-focus-openai.zip` from the GitHub Release for the version you want, and import that zip. Do not upload the repository root.
+
+To rebuild the same zip from a clone:
+
+```bash
+python3 scripts/build-openai-plugin.py --output /tmp/adhd-focus --archive /tmp/adhd-focus-openai.zip
+```
+
 ## Cursor
 
 GitHub import: Customize, then Plugins, then From GitHub Repository, then `https://github.com/jonathanjuliani/adhd-focus`.

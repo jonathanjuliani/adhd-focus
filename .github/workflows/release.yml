@@ -27,6 +27,12 @@ jobs:
       - name: Structural checks
         run: python3 scripts/validate.py
 
+      - name: Build OpenAI import package
+        run: python3 scripts/build-openai-plugin.py --output "$RUNNER_TEMP/adhd-focus" --archive "$RUNNER_TEMP/adhd-focus-openai.zip"
+
+      - name: Validate OpenAI import package
+        run: python3 scripts/test-openai-package.py "$RUNNER_TEMP/adhd-focus" --archive "$RUNNER_TEMP/adhd-focus-openai.zip"
+
       - name: GitHub Release from the changelog
         run: |
           version="${GITHUB_REF_NAME#v}"
@@ -36,6 +42,6 @@ jobs:
             found && /^\[[^]]+\]: / { exit }
             found { print }
           ' CHANGELOG.md > notes.md
-          gh release create "$GITHUB_REF_NAME" --title "adhd-focus $version" --notes-file notes.md --verify-tag
+          gh release create "$GITHUB_REF_NAME" --title "adhd-focus $version" --notes-file notes.md --verify-tag "$RUNNER_TEMP/adhd-focus-openai.zip#adhd-focus-openai.zip"
         env:
           GH_TOKEN: ${{ github.token }}

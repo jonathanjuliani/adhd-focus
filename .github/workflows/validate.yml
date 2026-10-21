@@ -19,6 +19,10 @@ jobs:
         run: python3 scripts/version.py --check
       - name: Version script tests
         run: python3 scripts/test_version.py
+      - name: Build OpenAI import package
+        run: python3 scripts/build-openai-plugin.py --output "$RUNNER_TEMP/adhd-focus" --archive "$RUNNER_TEMP/adhd-focus-openai.zip"
+      - name: Validate OpenAI import package
+        run: python3 scripts/test-openai-package.py "$RUNNER_TEMP/adhd-focus" --archive "$RUNNER_TEMP/adhd-focus-openai.zip"
 
   marketplace:
     # Pin the workflow file and the skilldeck checkout. github.workflow_sha in the

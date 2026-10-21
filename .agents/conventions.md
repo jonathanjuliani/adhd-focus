@@ -12,6 +12,10 @@ Rules for the one skill in this plugin. The markdown and user-invoked rules matc
 
 Root `skills` is a symlink to `plugins/adhd-focus/skills`. The files live inside the plugin directory. Cursor refuses a symlink out of the plugin.
 
+## OpenAI package
+
+Codex reads `plugins/adhd-focus/skills/` via `.codex-plugin/plugin.json`. ChatGPT and OpenAI web import the zip that CI attaches to each GitHub Release. `scripts/build-openai-plugin.py` builds that zip. The skill stays at `plugins/adhd-focus/skills/adhd-focus/`.
+
 ## Invocation
 
 This skill is user-invoked in both harnesses. Set `disable-model-invocation: true` in the frontmatter and `policy.allow_implicit_invocation: false` in `openai.yaml`. The `description` is a one-line summary. The agent does not reach for it on its own.

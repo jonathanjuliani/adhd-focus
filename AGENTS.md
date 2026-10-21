@@ -17,7 +17,7 @@ A commit is blocked on failure by `.githooks/pre-commit`, which needs `git confi
 
 ## When releasing
 
-Add each change under `## [Unreleased]` in [CHANGELOG.md](CHANGELOG.md) as you make it. Release with `python3 scripts/version.py <patch|minor|major>` on a clean `main`, then `git push --follow-tags`. Never change the version in one file by hand after the `0.0.0` seed: `python3 scripts/version.py --check` fails, and marketplace users only receive a change after a version bump.
+Add each change under `## [Unreleased]` in [CHANGELOG.md](CHANGELOG.md) as you make it. Release with `python3 scripts/version.py <patch|minor|major>` on a clean `main`, then `git push --follow-tags`. The release workflow attaches `adhd-focus-openai.zip` to the GitHub Release. Never change the version in one file by hand after the `0.0.0` seed: `python3 scripts/version.py --check` fails, and marketplace users only receive a change after a version bump.
 
 ## What this repo does not have
 

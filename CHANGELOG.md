@@ -6,6 +6,10 @@ Add each change under **Unreleased** as you make it; `python3 scripts/version.py
 
 ## [Unreleased]
 
+### Added
+
+- Each GitHub Release includes `adhd-focus-openai.zip`, the package ChatGPT and OpenAI web import.
+
 ## [0.1.1] - 2026-10-16
 
 ### Fixed
