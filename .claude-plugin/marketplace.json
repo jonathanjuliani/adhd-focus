@@ -8,7 +8,7 @@
   "plugins": [
     {
       "name": "adhd-focus",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "source": "./",
       "description": "A session-long output style for a reader with ADHD. Lean by default, with a structured breakdown only when asked.",
       "license": "MIT",
