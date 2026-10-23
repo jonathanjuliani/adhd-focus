@@ -6,6 +6,8 @@ Add each change under **Unreleased** as you make it; `python3 scripts/version.py
 
 ## [Unreleased]
 
+## [0.1.3] - 2026-10-23
+
 ### Changed
 
 - A tutoring or teaching skill that drives a multi-turn sequence keeps its sequence and its questions. adhd-focus shapes each turn, and the tutor's question counts as the one next action.
@@ -32,7 +34,8 @@ Add each change under **Unreleased** as you make it; `python3 scripts/version.py
 
 - `adhd-focus`, a session-long output style for a reader with ADHD. Lean by default, with a structured breakdown from `breakdown.md` only when asked. Adapted from `ayghri/i-have-adhd` (MIT).
 
-[Unreleased]: https://github.com/jonathanjuliani/adhd-focus/compare/v0.1.2...HEAD
+[Unreleased]: https://github.com/jonathanjuliani/adhd-focus/compare/v0.1.3...HEAD
+[0.1.3]: https://github.com/jonathanjuliani/adhd-focus/compare/v0.1.2...v0.1.3
 [0.1.2]: https://github.com/jonathanjuliani/adhd-focus/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/jonathanjuliani/adhd-focus/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/jonathanjuliani/adhd-focus/releases/tag/v0.1.0

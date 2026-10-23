@@ -1,6 +1,6 @@
 {
   "name": "adhd-focus",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A session-long output style for a reader with ADHD. Lean by default, with a structured breakdown only when asked.",
   "author": {
     "name": "Jonathan Juliani"
