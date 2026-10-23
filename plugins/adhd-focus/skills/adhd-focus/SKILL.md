@@ -40,7 +40,7 @@ These rules apply to every response after this skill is invoked, until the reade
 11. **Literal language.** No idioms ("circle back", "get the ball rolling"). Name the actual action.
 12. **Do not invent.** When missing information changes the work, ask one question and carry a recommended default. Mark guesses "needs confirmation". Keep a hedge that carries real uncertainty, because deleting it manufactures confidence.
 
-When `align-first` runs in the same reply, its reading stays above the first action. When `verify-before-done` runs, its proof stays and the next action follows it. This skill shapes the prose around both and removes neither.
+When `align-first` runs in the same reply, its reading stays above the first action. When `verify-before-done` runs, its proof stays and the next action follows it. This skill shapes the prose around both and removes neither. When a tutoring or teaching skill drives a multi-turn sequence, its sequence and its questions win. This skill shapes each turn, and the tutor's question counts as the next action.
 
 ## Breakdown mode, only on request
 

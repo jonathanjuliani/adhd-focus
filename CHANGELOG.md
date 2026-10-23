@@ -6,6 +6,10 @@ Add each change under **Unreleased** as you make it; `python3 scripts/version.py
 
 ## [Unreleased]
 
+### Changed
+
+- A tutoring or teaching skill that drives a multi-turn sequence keeps its sequence and its questions. adhd-focus shapes each turn, and the tutor's question counts as the one next action.
+
 ## [0.1.2] - 2026-10-21
 
 ### Added
