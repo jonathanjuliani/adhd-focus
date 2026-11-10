@@ -6,6 +6,8 @@ Add each change under **Unreleased** as you make it; `python3 scripts/version.py
 
 ## [Unreleased]
 
+## [0.1.4] - 2026-11-10
+
 ### Added
 
 - Manus upload package. `python3 scripts/build-manus-skills.py` writes `adhd-focus.skill`. A GitHub Release attaches it beside `adhd-focus-openai.zip`. The skill file in the repository is unchanged.
@@ -38,7 +40,8 @@ Add each change under **Unreleased** as you make it; `python3 scripts/version.py
 
 - `adhd-focus`, a session-long output style for a reader with ADHD. Lean by default, with a structured breakdown from `breakdown.md` only when asked. Adapted from `ayghri/i-have-adhd` (MIT).
 
-[Unreleased]: https://github.com/jonathanjuliani/adhd-focus/compare/v0.1.3...HEAD
+[Unreleased]: https://github.com/jonathanjuliani/adhd-focus/compare/v0.1.4...HEAD
+[0.1.4]: https://github.com/jonathanjuliani/adhd-focus/compare/v0.1.3...v0.1.4
 [0.1.3]: https://github.com/jonathanjuliani/adhd-focus/compare/v0.1.2...v0.1.3
 [0.1.2]: https://github.com/jonathanjuliani/adhd-focus/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/jonathanjuliani/adhd-focus/compare/v0.1.0...v0.1.1
