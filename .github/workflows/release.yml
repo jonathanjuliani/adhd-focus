@@ -33,6 +33,12 @@ jobs:
       - name: Validate OpenAI import package
         run: python3 scripts/test-openai-package.py "$RUNNER_TEMP/adhd-focus" --archive "$RUNNER_TEMP/adhd-focus-openai.zip"
 
+      - name: Build Manus skill archive
+        run: python3 scripts/build-manus-skills.py --output "$RUNNER_TEMP/manus"
+
+      - name: Validate Manus skill archive
+        run: python3 scripts/test-manus-package.py "$RUNNER_TEMP/manus"
+
       - name: GitHub Release from the changelog
         run: |
           version="${GITHUB_REF_NAME#v}"
@@ -42,6 +48,8 @@ jobs:
             found && /^\[[^]]+\]: / { exit }
             found { print }
           ' CHANGELOG.md > notes.md
-          gh release create "$GITHUB_REF_NAME" --title "adhd-focus $version" --notes-file notes.md --verify-tag "$RUNNER_TEMP/adhd-focus-openai.zip#adhd-focus-openai.zip"
+          gh release create "$GITHUB_REF_NAME" --title "adhd-focus $version" --notes-file notes.md --verify-tag \
+            "$RUNNER_TEMP/adhd-focus-openai.zip#adhd-focus-openai.zip" \
+            "$RUNNER_TEMP/manus/adhd-focus.skill#adhd-focus.skill"
         env:
           GH_TOKEN: ${{ github.token }}

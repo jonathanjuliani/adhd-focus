@@ -57,6 +57,20 @@ To rebuild the same zip from a clone:
 python3 scripts/build-openai-plugin.py --output /tmp/adhd-focus --archive /tmp/adhd-focus-openai.zip
 ```
 
+## Manus
+
+Manus imports one skill per upload. It does not install this plugin. Download `adhd-focus.skill` from the GitHub Release and upload it: Skills, then + Add, then Upload a skill. The repository URL and the skill-folder URL load the Claude text. On Manus, use the `.skill` file.
+
+Invoke with `/adhd-focus`. The archive tells Manus to keep the shape until "stop adhd mode" or "normal mode". If a later message drops the shape, start that message with `/adhd-focus`.
+
+To rebuild the archive from a clone:
+
+```bash
+python3 scripts/build-manus-skills.py --output /tmp/manus
+```
+
+The file is `/tmp/manus/adhd-focus.skill`. `adhd-focus-openai.zip` is unchanged and is still the ChatGPT import.
+
 ## Cursor
 
 GitHub import: Customize, then Plugins, then From GitHub Repository, then `https://github.com/jonathanjuliani/adhd-focus`.

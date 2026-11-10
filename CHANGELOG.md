@@ -6,6 +6,10 @@ Add each change under **Unreleased** as you make it; `python3 scripts/version.py
 
 ## [Unreleased]
 
+### Added
+
+- Manus upload package. `python3 scripts/build-manus-skills.py` writes `adhd-focus.skill`. A GitHub Release attaches it beside `adhd-focus-openai.zip`. The skill file in the repository is unchanged.
+
 ## [0.1.3] - 2026-10-23
 
 ### Changed
